@@ -1,0 +1,7 @@
+C:\Users\Ufuk\source\repos\FHICT OIS2\Traffic\Traffic\bin\Debug\Traffic.exe.config
+C:\Users\Ufuk\source\repos\FHICT OIS2\Traffic\Traffic\bin\Debug\Traffic.exe
+C:\Users\Ufuk\source\repos\FHICT OIS2\Traffic\Traffic\bin\Debug\Traffic.pdb
+C:\Users\Ufuk\source\repos\FHICT OIS2\Traffic\Traffic\obj\Debug\Traffic.csprojAssemblyReference.cache
+C:\Users\Ufuk\source\repos\FHICT OIS2\Traffic\Traffic\obj\Debug\Traffic.csproj.CoreCompileInputs.cache
+C:\Users\Ufuk\source\repos\FHICT OIS2\Traffic\Traffic\obj\Debug\Traffic.exe
+C:\Users\Ufuk\source\repos\FHICT OIS2\Traffic\Traffic\obj\Debug\Traffic.pdb

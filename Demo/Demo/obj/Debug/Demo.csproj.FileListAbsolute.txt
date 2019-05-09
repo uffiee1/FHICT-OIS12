@@ -1,0 +1,7 @@
+C:\Users\Ufuk\source\repos\FHICT OIS2\Demo\Demo\bin\Debug\Demo.exe.config
+C:\Users\Ufuk\source\repos\FHICT OIS2\Demo\Demo\bin\Debug\Demo.exe
+C:\Users\Ufuk\source\repos\FHICT OIS2\Demo\Demo\bin\Debug\Demo.pdb
+C:\Users\Ufuk\source\repos\FHICT OIS2\Demo\Demo\obj\Debug\Demo.csprojAssemblyReference.cache
+C:\Users\Ufuk\source\repos\FHICT OIS2\Demo\Demo\obj\Debug\Demo.csproj.CoreCompileInputs.cache
+C:\Users\Ufuk\source\repos\FHICT OIS2\Demo\Demo\obj\Debug\Demo.exe
+C:\Users\Ufuk\source\repos\FHICT OIS2\Demo\Demo\obj\Debug\Demo.pdb

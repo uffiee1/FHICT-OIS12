@@ -1,0 +1,7 @@
+C:\Users\Ufuk\source\repos\FHICT OIS2\Marimaba en de Bas\Marimaba en de Bas\obj\Debug\Marimaba en de Bas.csprojAssemblyReference.cache
+C:\Users\Ufuk\source\repos\FHICT OIS2\Marimaba en de Bas\Marimaba en de Bas\obj\Debug\Marimaba en de Bas.csproj.CoreCompileInputs.cache
+C:\Users\Ufuk\source\repos\FHICT OIS2\Marimaba en de Bas\Marimaba en de Bas\bin\Debug\Marimaba en de Bas.exe.config
+C:\Users\Ufuk\source\repos\FHICT OIS2\Marimaba en de Bas\Marimaba en de Bas\bin\Debug\Marimaba en de Bas.exe
+C:\Users\Ufuk\source\repos\FHICT OIS2\Marimaba en de Bas\Marimaba en de Bas\bin\Debug\Marimaba en de Bas.pdb
+C:\Users\Ufuk\source\repos\FHICT OIS2\Marimaba en de Bas\Marimaba en de Bas\obj\Debug\Marimaba en de Bas.exe
+C:\Users\Ufuk\source\repos\FHICT OIS2\Marimaba en de Bas\Marimaba en de Bas\obj\Debug\Marimaba en de Bas.pdb
