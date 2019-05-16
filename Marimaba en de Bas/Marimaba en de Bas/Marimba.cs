@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace Marimaba_en_de_Bas
 {
     class Marimba
-    {
+    { 
+
         public void PlayNote(string note)
         {
             
