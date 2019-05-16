@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Trafic_Light___Enum
 {
     class TrafficLight
-    {//test
+    {//testr
 
         public enum Color
         {
