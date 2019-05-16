@@ -80,8 +80,8 @@ namespace BankRekening
 
             lblEuroRechts.Text = NieuweBedrag.ToString();
 
-            double oud = 0.00;
-            lblEuroLinks.Text = oud.ToString();
+            double OudeBedrag = 0.00;
+            lblEuroLinks.Text = OudeBedrag.ToString();
 
         }
 
@@ -92,8 +92,8 @@ namespace BankRekening
             decimal NieuweBedrag = HuidigeBedrag + bedrag;
 
             lblEuroLinks.Text = NieuweBedrag.ToString();
-            double oud = 0.00;
-            lblEuroRechts.Text = oud.ToString();
+            double OudeBedrag = 0.00;
+            lblEuroRechts.Text = OudeBedrag.ToString();
         }
     }
 }
