@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 namespace Trafic_Light___Enum
 {
     class TrafficLight
-    {//updated
+    {
 
         public enum Color
         {
             green, orange, red
-        }; //
+        };
 
         private Color CurrentTrafficLightColor = Color.red;
 
