@@ -72,28 +72,45 @@ namespace BankRekening
             lblEuroRechts.Text = nieuwbedrag.ToString();
         }
 
+
+
+     
+
+
         private void btnNaarRechts_Click(object sender, EventArgs e)
         {
+
+            decimal euro = Convert.ToDecimal(txtbxEuroLinks.Text);
+            decimal centen = Convert.ToDecimal(txtbxEuroCentLinks.Text) / 100;
+            decimal bedrag = euro + centen;
+
             decimal HuidigeBedrag = Convert.ToDecimal(lblEuroLinks.Text);
-            decimal bedrag = Convert.ToDecimal(lblEuroRechts.Text);
-            decimal NieuweBedrag = HuidigeBedrag + bedrag; 
+            decimal BedragRechterkant = Convert.ToDecimal(lblEuroRechts.Text);
+            decimal NieuwBedragLinks = HuidigeBedrag - bedrag;
 
-            lblEuroRechts.Text = NieuweBedrag.ToString();
-
-            double OudeBedrag = 0.00;
-            lblEuroLinks.Text = OudeBedrag.ToString();
-
+            lblEuroLinks.Text = NieuwBedragLinks.ToString();
+            decimal nieuwbedragRechts = BedragRechterkant + bedrag;
+            lblEuroRechts.Text = nieuwbedragRechts.ToString();
         }
 
         private void btnNaarLinks_Click(object sender, EventArgs e)
         {
-            decimal HuidigeBedrag = Convert.ToDecimal(lblEuroRechts.Text);
-            decimal bedrag = Convert.ToDecimal(lblEuroLinks.Text);
-            decimal NieuweBedrag = HuidigeBedrag + bedrag;
+            decimal euro = Convert.ToDecimal(txtbxEuroRechts.Text);
+            decimal centen = Convert.ToDecimal(txtbxEuroCentRechts.Text) / 100;
+            decimal bedrag = euro + centen;
 
-            lblEuroLinks.Text = NieuweBedrag.ToString();
-            double OudeBedrag = 0.00;
-            lblEuroRechts.Text = OudeBedrag.ToString();
+            decimal HuidigeBedrag = Convert.ToDecimal(lblEuroRechts.Text);
+            decimal BedragLinkerKant = Convert.ToDecimal(lblEuroLinks.Text);
+            decimal NieuwBedragRechts = HuidigeBedrag - bedrag;
+
+            lblEuroRechts.Text = NieuwBedragRechts.ToString();
+            decimal nieuwbedragLinks = BedragLinkerKant + bedrag;
+            lblEuroLinks.Text = nieuwbedragLinks.ToString();
+        }
+
+        private void BankRekeningForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
