@@ -22,9 +22,13 @@ namespace BattleSim
 
         private void CheckEndGame()
         {
-            if (Ranger.HitPoints <= 0 || Warrior.HitPoints <= 0)
+            if (Ranger.HitPoints <= 0)
             {
-                MessageBox.Show("end game");
+                MessageBox.Show("Congratulations! Player 2 has Win The Battle!");
+            }
+            if (Warrior.HitPoints <= 0)
+            {
+                MessageBox.Show("Congratulations! Player 1 has WIN The Battle!");
             }
         }
 
@@ -52,12 +56,12 @@ namespace BattleSim
             BtnAttackLeft.Enabled = false;
             BtnAttackRight.Enabled = true;
             CheckEndGame();
+
             lblText.Text = "Well Done, De Beurt is nu bij PLAYER 2!";
         }
 
         private void BtnAttackRight_Click(object sender, EventArgs e)
         {
-
             int damage = rnd.Next(0, 30);
 
             if (damage <= 0)
@@ -74,9 +78,8 @@ namespace BattleSim
             BtnAttackLeft.Enabled = true;
             BtnAttackRight.Enabled = false;
             CheckEndGame();
+
             lblText.Text = "Well Done, De Beurt is nu bij PLAYER 1!";
-
-
         }
     }
 }
