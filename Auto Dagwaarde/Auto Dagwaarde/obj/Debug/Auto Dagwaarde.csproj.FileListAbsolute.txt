@@ -5,3 +5,10 @@ C:\Users\Ufuk\source\repos\Auto Dagwaarde\Auto Dagwaarde\obj\Debug\Auto Dagwaard
 C:\Users\Ufuk\source\repos\Auto Dagwaarde\Auto Dagwaarde\obj\Debug\Auto Dagwaarde.csproj.CoreCompileInputs.cache
 C:\Users\Ufuk\source\repos\Auto Dagwaarde\Auto Dagwaarde\obj\Debug\Auto Dagwaarde.exe
 C:\Users\Ufuk\source\repos\Auto Dagwaarde\Auto Dagwaarde\obj\Debug\Auto Dagwaarde.pdb
+C:\Users\Ufuk\source\repos\FHICT OIS2\Auto Dagwaarde\Auto Dagwaarde\bin\Debug\Auto Dagwaarde.exe.config
+C:\Users\Ufuk\source\repos\FHICT OIS2\Auto Dagwaarde\Auto Dagwaarde\bin\Debug\Auto Dagwaarde.exe
+C:\Users\Ufuk\source\repos\FHICT OIS2\Auto Dagwaarde\Auto Dagwaarde\bin\Debug\Auto Dagwaarde.pdb
+C:\Users\Ufuk\source\repos\FHICT OIS2\Auto Dagwaarde\Auto Dagwaarde\obj\Debug\Auto Dagwaarde.csprojAssemblyReference.cache
+C:\Users\Ufuk\source\repos\FHICT OIS2\Auto Dagwaarde\Auto Dagwaarde\obj\Debug\Auto Dagwaarde.csproj.CoreCompileInputs.cache
+C:\Users\Ufuk\source\repos\FHICT OIS2\Auto Dagwaarde\Auto Dagwaarde\obj\Debug\Auto Dagwaarde.exe
+C:\Users\Ufuk\source\repos\FHICT OIS2\Auto Dagwaarde\Auto Dagwaarde\obj\Debug\Auto Dagwaarde.pdb

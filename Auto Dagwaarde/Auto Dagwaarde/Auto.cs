@@ -17,7 +17,6 @@ namespace Auto_Dagwaarde
         private Brandstofsoort Brandstof { get; set; }
         
         private int Dagwaarde { get; }
-        //test31
         private int KmStand { get; set; }
         private string Kenteken { get; }
         public Auto(string kenteken, Brandstofsoort soortbrandstof)
