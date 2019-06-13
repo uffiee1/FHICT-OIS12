@@ -12,16 +12,13 @@ namespace BankRekening
 {
     public partial class BankRekeningForm : Form
     {
-
         private Bankrekening bankrekeningLinks;
         private Bankrekening bankrekeningRechts;
         public BankRekeningForm()
         {
-
             InitializeComponent();
             bankrekeningLinks = new Bankrekening("Ufuk Angay");
             bankrekeningRechts = new Bankrekening("Siy Nadiroglu");
-        
         }
 
         private void btnStortenLinks_Click(object sender, EventArgs e)
@@ -71,12 +68,6 @@ namespace BankRekening
             decimal nieuwbedrag = HuidigeBedrag - bedrag;
             lblEuroRechts.Text = nieuwbedrag.ToString();
         }
-
-
-
-     
-
-
         private void btnNaarRechts_Click(object sender, EventArgs e)
         {
 
@@ -106,11 +97,6 @@ namespace BankRekening
             lblEuroRechts.Text = NieuwBedragRechts.ToString();
             decimal nieuwbedragLinks = BedragLinkerKant + bedrag;
             lblEuroLinks.Text = nieuwbedragLinks.ToString();
-        }
-
-        private void BankRekeningForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

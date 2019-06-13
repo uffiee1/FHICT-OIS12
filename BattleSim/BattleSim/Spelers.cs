@@ -15,7 +15,7 @@ namespace BattleSim
             Warrior
         }
 
-        public Type SpelerType;
+        public Type SpelerType {get; set; }
         public Spelers(int hitpoints, Type type)
         {
             HitPoints = hitpoints;
@@ -29,3 +29,5 @@ namespace BattleSim
 
     }
 }
+
+

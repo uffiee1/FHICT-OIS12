@@ -310,7 +310,6 @@
             this.Name = "BankRekeningForm";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Bankzaken";
-            this.Load += new System.EventHandler(this.BankRekeningForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
