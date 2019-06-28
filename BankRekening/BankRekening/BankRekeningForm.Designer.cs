@@ -40,10 +40,8 @@
             this.btnStortenLinks = new System.Windows.Forms.Button();
             this.btnOpnemenRechts = new System.Windows.Forms.Button();
             this.btnStortenRechts = new System.Windows.Forms.Button();
-            this.txtbxEuroLinks = new System.Windows.Forms.TextBox();
-            this.txtbxEuroCentLinks = new System.Windows.Forms.TextBox();
-            this.txtbxEuroCentRechts = new System.Windows.Forms.TextBox();
-            this.txtbxEuroRechts = new System.Windows.Forms.TextBox();
+            this.txtbxEuro = new System.Windows.Forms.TextBox();
+            this.txtbxEuroCent = new System.Windows.Forms.TextBox();
             this.lblEuroRechts = new System.Windows.Forms.Label();
             this.lblSaldoRechts = new System.Windows.Forms.Label();
             this.lblSiy = new System.Windows.Forms.Label();
@@ -51,7 +49,6 @@
             this.lblRekeningSiy = new System.Windows.Forms.Label();
             this.lblRekeningRechts = new System.Windows.Forms.Label();
             this.lblKomma1 = new System.Windows.Forms.Label();
-            this.lblKomma2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblRekeningLinks
@@ -110,7 +107,7 @@
             // 
             // btnNaarRechts
             // 
-            this.btnNaarRechts.Location = new System.Drawing.Point(261, 53);
+            this.btnNaarRechts.Location = new System.Drawing.Point(240, 53);
             this.btnNaarRechts.Name = "btnNaarRechts";
             this.btnNaarRechts.Size = new System.Drawing.Size(75, 23);
             this.btnNaarRechts.TabIndex = 12;
@@ -120,7 +117,7 @@
             // 
             // btnNaarLinks
             // 
-            this.btnNaarLinks.Location = new System.Drawing.Point(261, 92);
+            this.btnNaarLinks.Location = new System.Drawing.Point(240, 92);
             this.btnNaarLinks.Name = "btnNaarLinks";
             this.btnNaarLinks.Size = new System.Drawing.Size(75, 23);
             this.btnNaarLinks.TabIndex = 13;
@@ -130,7 +127,7 @@
             // 
             // btnOpnemenLinks
             // 
-            this.btnOpnemenLinks.Location = new System.Drawing.Point(188, 160);
+            this.btnOpnemenLinks.Location = new System.Drawing.Point(113, 144);
             this.btnOpnemenLinks.Name = "btnOpnemenLinks";
             this.btnOpnemenLinks.Size = new System.Drawing.Size(85, 43);
             this.btnOpnemenLinks.TabIndex = 14;
@@ -140,7 +137,7 @@
             // 
             // btnStortenLinks
             // 
-            this.btnStortenLinks.Location = new System.Drawing.Point(188, 209);
+            this.btnStortenLinks.Location = new System.Drawing.Point(22, 144);
             this.btnStortenLinks.Name = "btnStortenLinks";
             this.btnStortenLinks.Size = new System.Drawing.Size(85, 43);
             this.btnStortenLinks.TabIndex = 15;
@@ -150,7 +147,7 @@
             // 
             // btnOpnemenRechts
             // 
-            this.btnOpnemenRechts.Location = new System.Drawing.Point(573, 160);
+            this.btnOpnemenRechts.Location = new System.Drawing.Point(470, 144);
             this.btnOpnemenRechts.Name = "btnOpnemenRechts";
             this.btnOpnemenRechts.Size = new System.Drawing.Size(85, 43);
             this.btnOpnemenRechts.TabIndex = 16;
@@ -160,7 +157,7 @@
             // 
             // btnStortenRechts
             // 
-            this.btnStortenRechts.Location = new System.Drawing.Point(573, 209);
+            this.btnStortenRechts.Location = new System.Drawing.Point(379, 144);
             this.btnStortenRechts.Name = "btnStortenRechts";
             this.btnStortenRechts.Size = new System.Drawing.Size(85, 43);
             this.btnStortenRechts.TabIndex = 17;
@@ -168,46 +165,28 @@
             this.btnStortenRechts.UseVisualStyleBackColor = true;
             this.btnStortenRechts.Click += new System.EventHandler(this.btnStortenRechts_Click);
             // 
-            // txtbxEuroLinks
+            // txtbxEuro
             // 
-            this.txtbxEuroLinks.Location = new System.Drawing.Point(22, 181);
-            this.txtbxEuroLinks.Name = "txtbxEuroLinks";
-            this.txtbxEuroLinks.Size = new System.Drawing.Size(64, 22);
-            this.txtbxEuroLinks.TabIndex = 18;
-            this.txtbxEuroLinks.Text = "0";
-            this.txtbxEuroLinks.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbxEuro.Location = new System.Drawing.Point(220, 154);
+            this.txtbxEuro.Name = "txtbxEuro";
+            this.txtbxEuro.Size = new System.Drawing.Size(64, 22);
+            this.txtbxEuro.TabIndex = 18;
+            this.txtbxEuro.Text = "0";
+            this.txtbxEuro.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // txtbxEuroCentLinks
+            // txtbxEuroCent
             // 
-            this.txtbxEuroCentLinks.Location = new System.Drawing.Point(110, 181);
-            this.txtbxEuroCentLinks.MaxLength = 2;
-            this.txtbxEuroCentLinks.Name = "txtbxEuroCentLinks";
-            this.txtbxEuroCentLinks.Size = new System.Drawing.Size(40, 22);
-            this.txtbxEuroCentLinks.TabIndex = 19;
-            this.txtbxEuroCentLinks.Text = "00";
-            // 
-            // txtbxEuroCentRechts
-            // 
-            this.txtbxEuroCentRechts.Location = new System.Drawing.Point(502, 181);
-            this.txtbxEuroCentRechts.MaxLength = 2;
-            this.txtbxEuroCentRechts.Name = "txtbxEuroCentRechts";
-            this.txtbxEuroCentRechts.Size = new System.Drawing.Size(40, 22);
-            this.txtbxEuroCentRechts.TabIndex = 27;
-            this.txtbxEuroCentRechts.Text = "00";
-            // 
-            // txtbxEuroRechts
-            // 
-            this.txtbxEuroRechts.Location = new System.Drawing.Point(414, 181);
-            this.txtbxEuroRechts.Name = "txtbxEuroRechts";
-            this.txtbxEuroRechts.Size = new System.Drawing.Size(64, 22);
-            this.txtbxEuroRechts.TabIndex = 26;
-            this.txtbxEuroRechts.Text = "0";
-            this.txtbxEuroRechts.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbxEuroCent.Location = new System.Drawing.Point(308, 154);
+            this.txtbxEuroCent.MaxLength = 2;
+            this.txtbxEuroCent.Name = "txtbxEuroCent";
+            this.txtbxEuroCent.Size = new System.Drawing.Size(40, 22);
+            this.txtbxEuroCent.TabIndex = 19;
+            this.txtbxEuroCent.Text = "00";
             // 
             // lblEuroRechts
             // 
             this.lblEuroRechts.AutoSize = true;
-            this.lblEuroRechts.Location = new System.Drawing.Point(502, 98);
+            this.lblEuroRechts.Location = new System.Drawing.Point(467, 98);
             this.lblEuroRechts.Name = "lblEuroRechts";
             this.lblEuroRechts.Size = new System.Drawing.Size(36, 17);
             this.lblEuroRechts.TabIndex = 33;
@@ -216,7 +195,7 @@
             // lblSaldoRechts
             // 
             this.lblSaldoRechts.AutoSize = true;
-            this.lblSaldoRechts.Location = new System.Drawing.Point(411, 98);
+            this.lblSaldoRechts.Location = new System.Drawing.Point(376, 98);
             this.lblSaldoRechts.Name = "lblSaldoRechts";
             this.lblSaldoRechts.Size = new System.Drawing.Size(48, 17);
             this.lblSaldoRechts.TabIndex = 32;
@@ -225,7 +204,7 @@
             // lblSiy
             // 
             this.lblSiy.AutoSize = true;
-            this.lblSiy.Location = new System.Drawing.Point(502, 66);
+            this.lblSiy.Location = new System.Drawing.Point(467, 66);
             this.lblSiy.Name = "lblSiy";
             this.lblSiy.Size = new System.Drawing.Size(92, 17);
             this.lblSiy.TabIndex = 31;
@@ -234,7 +213,7 @@
             // lblNaamRechts
             // 
             this.lblNaamRechts.AutoSize = true;
-            this.lblNaamRechts.Location = new System.Drawing.Point(411, 66);
+            this.lblNaamRechts.Location = new System.Drawing.Point(376, 66);
             this.lblNaamRechts.Name = "lblNaamRechts";
             this.lblNaamRechts.Size = new System.Drawing.Size(49, 17);
             this.lblNaamRechts.TabIndex = 30;
@@ -243,7 +222,7 @@
             // lblRekeningSiy
             // 
             this.lblRekeningSiy.AutoSize = true;
-            this.lblRekeningSiy.Location = new System.Drawing.Point(502, 38);
+            this.lblRekeningSiy.Location = new System.Drawing.Point(467, 38);
             this.lblRekeningSiy.Name = "lblRekeningSiy";
             this.lblRekeningSiy.Size = new System.Drawing.Size(40, 17);
             this.lblRekeningSiy.TabIndex = 29;
@@ -252,7 +231,7 @@
             // lblRekeningRechts
             // 
             this.lblRekeningRechts.AutoSize = true;
-            this.lblRekeningRechts.Location = new System.Drawing.Point(411, 38);
+            this.lblRekeningRechts.Location = new System.Drawing.Point(376, 38);
             this.lblRekeningRechts.Name = "lblRekeningRechts";
             this.lblRekeningRechts.Size = new System.Drawing.Size(85, 17);
             this.lblRekeningRechts.TabIndex = 28;
@@ -261,27 +240,17 @@
             // lblKomma1
             // 
             this.lblKomma1.AutoSize = true;
-            this.lblKomma1.Location = new System.Drawing.Point(92, 188);
+            this.lblKomma1.Location = new System.Drawing.Point(290, 161);
             this.lblKomma1.Name = "lblKomma1";
             this.lblKomma1.Size = new System.Drawing.Size(12, 17);
             this.lblKomma1.TabIndex = 34;
             this.lblKomma1.Text = ",";
             // 
-            // lblKomma2
-            // 
-            this.lblKomma2.AutoSize = true;
-            this.lblKomma2.Location = new System.Drawing.Point(484, 188);
-            this.lblKomma2.Name = "lblKomma2";
-            this.lblKomma2.Size = new System.Drawing.Size(12, 17);
-            this.lblKomma2.TabIndex = 35;
-            this.lblKomma2.Text = ",";
-            // 
             // BankRekeningForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(680, 356);
-            this.Controls.Add(this.lblKomma2);
+            this.ClientSize = new System.Drawing.Size(624, 278);
             this.Controls.Add(this.lblKomma1);
             this.Controls.Add(this.lblEuroRechts);
             this.Controls.Add(this.lblSaldoRechts);
@@ -289,10 +258,8 @@
             this.Controls.Add(this.lblNaamRechts);
             this.Controls.Add(this.lblRekeningSiy);
             this.Controls.Add(this.lblRekeningRechts);
-            this.Controls.Add(this.txtbxEuroCentRechts);
-            this.Controls.Add(this.txtbxEuroRechts);
-            this.Controls.Add(this.txtbxEuroCentLinks);
-            this.Controls.Add(this.txtbxEuroLinks);
+            this.Controls.Add(this.txtbxEuroCent);
+            this.Controls.Add(this.txtbxEuro);
             this.Controls.Add(this.btnStortenRechts);
             this.Controls.Add(this.btnOpnemenRechts);
             this.Controls.Add(this.btnStortenLinks);
@@ -329,10 +296,8 @@
         private System.Windows.Forms.Button btnStortenLinks;
         private System.Windows.Forms.Button btnOpnemenRechts;
         private System.Windows.Forms.Button btnStortenRechts;
-        private System.Windows.Forms.TextBox txtbxEuroLinks;
-        private System.Windows.Forms.TextBox txtbxEuroCentLinks;
-        private System.Windows.Forms.TextBox txtbxEuroCentRechts;
-        private System.Windows.Forms.TextBox txtbxEuroRechts;
+        private System.Windows.Forms.TextBox txtbxEuro;
+        private System.Windows.Forms.TextBox txtbxEuroCent;
         private System.Windows.Forms.Label lblEuroRechts;
         private System.Windows.Forms.Label lblSaldoRechts;
         private System.Windows.Forms.Label lblSiy;
@@ -340,7 +305,6 @@
         private System.Windows.Forms.Label lblRekeningSiy;
         private System.Windows.Forms.Label lblRekeningRechts;
         private System.Windows.Forms.Label lblKomma1;
-        private System.Windows.Forms.Label lblKomma2;
     }
 }
 

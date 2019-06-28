@@ -14,6 +14,8 @@ namespace BankRekening
     {
         private Bankrekening bankrekeningLinks;
         private Bankrekening bankrekeningRechts;
+
+
         public BankRekeningForm()
         {
             InitializeComponent();
@@ -21,58 +23,61 @@ namespace BankRekening
             bankrekeningRechts = new Bankrekening("Siy Nadiroglu");
         }
 
-        private void btnStortenLinks_Click(object sender, EventArgs e)
+        public decimal ConvertStorten(string text)
         {
-            decimal euro = Convert.ToDecimal(txtbxEuroLinks.Text);
-            decimal centen = Convert.ToDecimal(txtbxEuroCentLinks.Text) / 100;
+            decimal euro = Convert.ToDecimal(txtbxEuro.Text);
+            decimal centen = Convert.ToDecimal(txtbxEuroCent.Text) / 100;
             decimal bedrag = euro + centen;
 
             decimal HuidigeBedrag = Convert.ToDecimal(lblEuroLinks.Text);
 
             decimal nieuwbedrag = bedrag + HuidigeBedrag;
+            lblEuroLinks.Text = nieuwbedrag.ToString();
+            return (nieuwbedrag);
+        }
+
+        public decimal ConvertOpnemen(string harry)
+        {
+            decimal euro = Convert.ToDecimal(txtbxEuro.Text);
+            decimal centen = Convert.ToDecimal(txtbxEuroCent.Text) / 100;
+            decimal bedrag = euro + centen;
+
+            decimal huidigeBedrag = Convert.ToDecimal(harry);
+
+            decimal nieuwbedrag = huidigeBedrag - bedrag;
+        
+            return (nieuwbedrag);
+        }
+
+        public void btnStortenLinks_Click(object sender, EventArgs e)
+        {
+          decimal nieuwbedrag = ConvertStorten(lblEuroLinks.Text);
             lblEuroLinks.Text = nieuwbedrag.ToString();
         }
 
         private void btnOpnemenLinks_Click(object sender, EventArgs e)
         {
-            decimal euro = Convert.ToDecimal(txtbxEuroLinks.Text);
-            decimal centen = Convert.ToDecimal(txtbxEuroCentLinks.Text) / 100;
-            decimal bedrag = euro + centen;
-
-            decimal HuidigeBedrag = Convert.ToDecimal(lblEuroLinks.Text);
-
-            decimal nieuwbedrag = HuidigeBedrag - bedrag;
+            decimal nieuwbedrag = ConvertOpnemen(lblEuroLinks.Text);
             lblEuroLinks.Text = nieuwbedrag.ToString();
         }
 
         private void btnStortenRechts_Click(object sender, EventArgs e)
         {
-            decimal euro = Convert.ToDecimal(txtbxEuroRechts.Text);
-            decimal centen = Convert.ToDecimal(txtbxEuroCentRechts.Text) / 100;
-            decimal bedrag = euro + centen;
-
-            decimal HuidigeBedrag = Convert.ToDecimal(lblEuroRechts.Text);
-
-            decimal nieuwbedrag = bedrag + HuidigeBedrag;
+            decimal nieuwbedrag = ConvertStorten(lblEuroRechts.Text);
             lblEuroRechts.Text = nieuwbedrag.ToString();
         }
 
         private void btnOpnemenRechts_Click(object sender, EventArgs e)
         {
-            decimal euro = Convert.ToDecimal(txtbxEuroRechts.Text);
-            decimal centen = Convert.ToDecimal(txtbxEuroCentRechts.Text) / 100;
-            decimal bedrag = euro + centen;
-
-            decimal HuidigeBedrag = Convert.ToDecimal(lblEuroRechts.Text);
-
-            decimal nieuwbedrag = HuidigeBedrag - bedrag;
+           decimal nieuwbedrag = ConvertOpnemen(lblEuroRechts.Text);
             lblEuroRechts.Text = nieuwbedrag.ToString();
         }
+
         private void btnNaarRechts_Click(object sender, EventArgs e)
         {
 
-            decimal euro = Convert.ToDecimal(txtbxEuroLinks.Text);
-            decimal centen = Convert.ToDecimal(txtbxEuroCentLinks.Text) / 100;
+            decimal euro = Convert.ToDecimal(txtbxEuro.Text);
+            decimal centen = Convert.ToDecimal(txtbxEuroCent.Text) / 100;
             decimal bedrag = euro + centen;
 
             decimal HuidigeBedrag = Convert.ToDecimal(lblEuroLinks.Text);
@@ -86,8 +91,8 @@ namespace BankRekening
 
         private void btnNaarLinks_Click(object sender, EventArgs e)
         {
-            decimal euro = Convert.ToDecimal(txtbxEuroRechts.Text);
-            decimal centen = Convert.ToDecimal(txtbxEuroCentRechts.Text) / 100;
+            decimal euro = Convert.ToDecimal(txtbxEuro.Text);
+            decimal centen = Convert.ToDecimal(txtbxEuroCent.Text) / 100;
             decimal bedrag = euro + centen;
 
             decimal HuidigeBedrag = Convert.ToDecimal(lblEuroRechts.Text);
